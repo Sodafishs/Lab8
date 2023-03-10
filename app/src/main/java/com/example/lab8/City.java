@@ -10,6 +10,11 @@ public class City {
         this.province = province;
     }
 
+    public int compareTo(Object o) {
+        City city = (City) o;
+        return this.city.compareTo(city.getCityName());
+    }
+
     String getCityName(){
         return this.city;
     }
